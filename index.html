@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo editor</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<canvas id='canvas'></canvas>
+			</td>
+			<td>
+				<label for="filterGray">
+					<input type="checkbox" id='filterGray'/> Серый фильтр
+				</label>
+				<br>
+
+				<label for="filterRed">
+					<input type="checkbox" id='filterRed'/> Фильтр красного
+				</label>
+				<br>
+
+				<label for="filterBlue">
+					<input type="checkbox" id='filterBlue'/> Фильтр синий
+				</label>
+				<br>
+
+				<label for="filterGreen">
+					<input type="checkbox" id='filterGreen'/> Фильтр зеленого
+				</label>
+				<br>
+				<input type="file" accept="image/*" id='loadImage'><br>
+				<button id='download'>Скачать</button>
+			</td>
+		</tr>
+	</table>
+
+	<script src=' js/additional.js'></script>
+	<script src='js/script.js'></script>
+</body>
+</html>
